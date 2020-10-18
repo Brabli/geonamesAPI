@@ -1,0 +1,26 @@
+html {
+  background-color: rgb(157, 157, 157);
+  text-align: center;
+}
+
+td, th {
+  padding: 0.4rem;
+  border: solid black 2px;
+  font-size: 1.3rem;
+  font-family: Arial, sans-serif;
+  background-color: rgb(219, 219, 219);
+}
+
+button {
+  display: block;
+  margin: 0 auto;
+}
+
+input[type="range"] {
+  display: block;
+  float: left;
+}
+
+td p#results {
+  min-height: 1.3rem;
+}

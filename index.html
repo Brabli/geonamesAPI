@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width", initial-scale="1.0" />
+    <title>GeoNames APIs Demo</title>
+    <link type="text/css" rel="stylesheet" href="css/styles.css" />
+    <link rel="icon" href="favicon.png" />
+  </head>
+  <body>
+
+    <table>
+      <thead>
+        <tr>
+          <th>API Name</th>
+          <th>Description</th>
+          <th>Parameters</th>
+          <th>Submit</th>
+        </tr>
+    </thead>
+
+      <!-- Street Name Lookup API -->
+        <tbody>
+        <tr>
+          <td title="streetNameLookup">Street Search</td>
+          <td>Returns a street whose name begins with the query term.</td>
+          <td>
+            <label for="street-term">Query Term</label>
+            <br>
+            <input type="text" id="street-term" />
+          </td>
+          <td>
+            <button id="streetBtn">Search for Street</button>
+          </td>
+        </tr>
+
+        <!-- Ocean API -->
+        <tr>
+          <td title="ocean">Ocean</td>
+          <td>Finds the name of the ocean that resides at the given latitude and longitude coordinates.</td>
+          <td>
+            <label for="latitude">Latitude</label>
+            <br>
+            <input type="range" min="-90" max="90" value="0" id="latitude" />
+            <span id="lat-val">0</span>&deg;
+            <br>
+            <label for="longitude">Longitude</label>
+            <br>
+            <input type="range" min="-90" max="90" value="0" id="longitude" />
+            <span id="long-val">0</span>&deg;
+          </td>
+          <td>
+            <button id="oceanBtn">Find Ocean Name</button>
+          </td>
+        </tr>
+
+        <!-- Wikipedia Search API -->
+        <tr>
+          <td title="wikipediaSearch">Wikipedia Search</td>
+          <td>Displays info about a location from the Wikipedia search API via GeoName.</td>
+          <td>
+            <label for="wiki-term">Location</label>
+            <input type="text" id="wiki-term" />
+          </td>
+          <td>
+            <button id="wikiBtn">Search Wikipedia Entries</button>
+          </td>
+        </tr>
+      </tbody>
+
+      <!-- Results -->
+      <tfoot>
+        <tr>
+          <td colspan="4">
+            <p id="results">Results will show up here!</p>
+          </td>
+        </tr>
+      </tfoot>
+    </table>
+
+  <script type="text/javascript" src="vendors/jQuery/jquery-3.5.1.min.js"></script>
+  <script type="text/javascript" src="js/script.js"></script>
+
+  </body>
+</html>
