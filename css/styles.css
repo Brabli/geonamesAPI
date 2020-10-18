@@ -20,7 +20,3 @@ input[type="range"] {
   display: block;
   float: left;
 }
-
-td p#results {
-  min-height: 1.3rem;
-}
